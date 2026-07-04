@@ -156,8 +156,6 @@ button {
 .profile-image {
     width: 3rem;
     height: 3rem;
-    border-radius: 50%;
-    object-fit: cover;
     grid-column: 4 / 5;
 }
 
@@ -182,8 +180,6 @@ button {
 .user-image {
     width: 4rem;
     height: 4rem;
-    border-radius: 50%;
-    object-fit: cover;
     grid-column: 1 / 2;
 }
 
@@ -324,7 +320,18 @@ button {
     line-height: 1.2rem;
 }
 
-/* .announcements-card > * > h4{
-    padding: 0.1rem;
+.trending-user {
+    font-size: 1rem;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.trending-user > .profile-image {
+    grid-column: 1 / 2;
+}
+
+.trending-username {
+    padding-bottom: 0.2rem;
     color: #000000;
-} */
+    font-weight: 600;
+}
