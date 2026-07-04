@@ -96,9 +96,29 @@ button {
 
 .nav-list {
     fill: white;
+    text-decoration: none;
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
     gap: 1rem;
+}
+
+.nav-list:link {
+    color: #ffffff;
+}
+
+.nav-list:visited {
+    color: #ffffff;
+}
+
+.nav-list:hover {
+    fill: #000000;
+    color: #000000;
+}
+
+.nav-list:active {
+    fill: #ffffff;
+    color: #ffffff;
 }
 
 .header {
@@ -147,6 +167,10 @@ button {
     grid-column: 2 / 3;
     justify-self: start;
     align-self: center;
+}
+
+.search-bar:hover, .search-bar:focus{
+    border: 1px solid #000000;
 }
 
 .header-row1 svg:nth-of-type(2) {
@@ -198,6 +222,18 @@ button {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     align-items: center;
+}
+
+.header-buttons > button:hover {
+    cursor: pointer;
+    background-color: #f0b429;
+    color: #000000;
+    border: 1px solid #636363;
+}
+
+.header-buttons > button:active {
+    background-color: #1992d4;
+    color: #ffffff;
 }
 
 .main-content {
