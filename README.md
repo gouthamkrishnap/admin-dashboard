@@ -1,6 +1,10 @@
 # admin-dashboard
 Project for The Odin Project course.
 
+## Live Preview
+
+- Admin Dashboard : https://gouthamkrishnap.github.io/admin-dashboard/
+
 ## Credits
 
 ### Icons
