@@ -8,6 +8,17 @@ ul {
     list-style: none;
 }
 
+button {
+    width: 6.2rem;
+    height: 2.6rem;
+    background-color: #1992d4;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 24px;
+}
+
 .main-container {
     height: 100vh;
     display: grid;
@@ -87,9 +98,61 @@ ul {
 }
 
 .header {
-    background-color: rgb(181, 180, 180);
+    background-color: #ffffff;
+    margin: 1rem 3rem;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header-row1 {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto 10fr auto auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.header-row1 > * {
+    margin: 0 0.4rem;
+}
+
+.header-row1 svg:nth-of-type(1) {
+    grid-column: 1 / 2;
+    margin: 0;
+}
+
+.search-bar {
+    margin: 0.3rem 0;
+    width: min(48rem, 100%);
+    background-color: #e2e8f0;
+    border-radius: 32px;
+    grid-column: 2 / 3;
+    justify-self: start;
+    align-self: stretch;
+}
+
+.header-row1 svg:nth-of-type(2) {
+    grid-column: 3 / 4;
+}
+
+.profile-image {
+    width: 2.5rem;
+    border-radius: 32px;
+    grid-column: 4 / 5;
+}
+
+.profile-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    grid-column: 5 / 6;
+}
+
+.header-icons {
+    width: 1.5rem;
+    fill: #000000;
 }
 
 .main-content {
